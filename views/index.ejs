@@ -1,0 +1,12 @@
+<%-include('header')-%>
+
+    <form action="/movie" method="POST">
+        <input type="text" name="newInput">
+    </form>
+
+    <%movies.forEach(function(movie){%>
+        <img src="https://image.tmdb.org/t/p/w1280/<%=movie.poster_path%>" class="img">
+    <%});%>
+
+
+    <%-include('footer')-%>

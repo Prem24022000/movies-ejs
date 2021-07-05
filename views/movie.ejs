@@ -1,0 +1,7 @@
+<%-include('header')-%>
+
+<%movies.forEach(function(movie){%>
+    <img src="https://image.tmdb.org/t/p/w1280/<%=movie.poster_path%>" class="img">
+<%});%>
+
+<%-include('footer')-%>
